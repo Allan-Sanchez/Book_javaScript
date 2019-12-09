@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Animated.css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+    <title>Javascript Books</title>
+</head>
+<body>
+   
+    <!-- As a heading -->
+    <nav class="navbar navbar-dark bg-info">
+      <span class="navbar-brand mb-0 h1">Javascript Full-Stack</span>
+    </nav>
+
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col">
+          <h1 class="text-center">Books</h1>
+          <div id="messageID">
+            <!-- <div class="alert alert-primary text-center" role="alert">
+              A simple primary alert—check it out!
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="d-sm-none d-md-block col-md-2 col-lg-4"></div>
+        <div class="col-sm-12 col-md-8 col-lg-4">
+          <h2 class="text-center">Nueva Entrada</h2>
+          <form id="book-form">
+
+            <div class="form-group">
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white"><i class="fa fa-book"></i></span>
+                  </div>
+                  <input type="text" placeholder="Title" id="bookTitle" required class="form-control border-left-0">
+                </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white"><i class="fa fa-user"></i></span>
+                  </div>
+                  <input type="text" placeholder="Author" id="bookAuthor" required class="form-control border-left-0">
+                </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white"><b>#</b></span>
+                  </div>
+                  <input type="text" placeholder="Isbn" id="bookIsbn" required class="form-control border-left-0">
+                </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-white"><i class="fa fa-image"></i></span>
+                  </div>
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" required id="bookImage">
+                    <label for="bookImage" class="custom-file-label">Choose Image</label>
+                  </div>
+                </div>
+            </div>
+
+           
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Description" required id="bookDescription" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-block py-2"><b>Create</b></button>
+
+          </form>
+        </div>
+        <div class=" d-sm-none d-md-block col-md-2 col-lg-4"></div>
+      </div>
+
+      <div class="row mt-4" id="card-book">
+          <!-- <div class="col-4 ">
+              <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="https://assets.website-files.com/5cb824d254c541f8f8aa84d6/5cb83f9d54c5414b8faad88c_Sakura-CreditCard-Gold-LighterLogo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                      Author : <cite title="Source Title">Source Title</cite>
+                    </small>
+                  </footer>
+              </div>
+          </div> -->
+      </div>
+    </div>
+
+</body>
+</html>
